@@ -14,7 +14,7 @@ public class PostEffectRenderPass:ScriptableRenderPass
     }
     public override void RecordRenderGraph(RenderGraph renderGraph, ContextContainer frameData)
     {
-        if (material_ = null)
+        if (material_ == null)
         {
             base.RecordRenderGraph(renderGraph, frameData);
             return;
